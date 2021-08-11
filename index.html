@@ -114,34 +114,31 @@ function calAngkaMutu()
 {
     var angkaMutu =  parseInt($("#valtugas1").val())+parseInt($("#valtugas2").val())+parseInt($("#valuts").val())+parseInt($("#valuas").val())+parseInt($("#valabsensi").val());
     $("#angkamutu").html(angkaMutu);
-    if(angkaMutu<40){
+    if(angkaMutu<45.99){
         hurufMutu="E"
     }
-    else if(angkaMutu>=40 & angkaMutu<50){
+    else if(angkaMutu>=46 & angkaMutu<56){
         hurufMutu="D"
     }
-    else if(angkaMutu>=50 & angkaMutu<55){
-        hurufMutu="C-"
-    }
-    else if(angkaMutu>=55 & angkaMutu<60){
+    else if(angkaMutu>=56 & angkaMutu<64){
         hurufMutu="C"
     }
-    else if(angkaMutu>=60 & angkaMutu<65){
+    else if(angkaMutu>=64 & angkaMutu<68){
         hurufMutu="C+"
     }
-    else if(angkaMutu>=65 & angkaMutu<70){
+    else if(angkaMutu>=68 & angkaMutu<71){
         hurufMutu="B-"
     }
-    else if(angkaMutu>=70 & angkaMutu<75){
+    else if(angkaMutu>=71 & angkaMutu<74){
         hurufMutu="B"
     }
-    else if(angkaMutu>=75 & angkaMutu<80){
+    else if(angkaMutu>=74 & angkaMutu<77){
         hurufMutu="B+"
     }
-    else if(angkaMutu>=80 & angkaMutu<85){
+    else if(angkaMutu>=77 & angkaMutu<80){
         hurufMutu="A-"
     }
-    else if(angkaMutu>=85){
+    else if(angkaMutu>=80 & angkaMutu<=100){
         hurufMutu="A"
     }
     $("#hurufmutu").html("<b>"+hurufMutu+"</b>");
