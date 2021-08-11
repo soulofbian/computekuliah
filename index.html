@@ -112,7 +112,9 @@ $("#absensi").keyup(function(){
 });
 function calAngkaMutu()
 {
-    var angkaMutu =  parseInt($("#valtugas1").val())+parseInt($("#valtugas2").val())+parseInt($("#valuts").val())+parseInt($("#valuas").val())+parseInt($("#valabsensi").val());
+    var angkaMutu =  parseFloat($("#valtugas1").val())+parseFloat($("#valtugas2").val())+parseFloat($("#valuts").val())+parseFloat($("#valuas").val())+parseFloat($("#valabsensi").val());
+    angkaMutu = parseFloat(angkaMutu).toFixed(2);
+
     $("#angkamutu").html(angkaMutu);
     if(angkaMutu<46){
         hurufMutu="E"
